@@ -1,12 +1,9 @@
 import {
-  ArrowSquareOut,
   GithubLogo,
   InstagramLogo,
   TwitterLogo,
 } from "@phosphor-icons/react/dist/ssr";
 import Link from "next/link";
-import { JSX, SVGProps } from "react";
-
 export default function Home() {
   return (
     <main>
