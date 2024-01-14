@@ -1,9 +1,11 @@
 import {
+  ArrowSquareOut,
   GithubLogo,
   InstagramLogo,
   TwitterLogo,
 } from "@phosphor-icons/react/dist/ssr";
 import Link from "next/link";
+import { JSX, SVGProps } from "react";
 
 export default function Home() {
   return (
@@ -34,7 +36,7 @@ export default function Home() {
           <div className="bordered p-4">
             <div className="p-4">
               <Link href="https://github.com" aria-label="Project Link">
-                <h2 className="text-xl font-semibold mb-2 underline-offset-2 hover:underline">
+                <h2 className="text-blue-700 hover:text-blue-800 dark:text-blue-400 dark:hover:text-blue-700 text-xl font-semibold mb-2 underline-offset-2 hover:underline">
                   Project A
                 </h2>
               </Link>
@@ -46,9 +48,10 @@ export default function Home() {
             </div>
             <div className="p-4">
               <Link href="https://github.com" aria-label="Project Link">
-                <h2 className="text-xl font-semibold mb-2 underline-offset-2 hover:underline">
+                <h2 className="text-blue-700 hover:text-blue-800 dark:text-blue-400 dark:hover:text-blue-700 text-xl font-semibold mb-2 underline-offset-2 hover:underline">
                   Project B
                 </h2>
+               
               </Link>
               <p>
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque
@@ -61,4 +64,26 @@ export default function Home() {
       </div>
     </main>
   );
+}
+
+
+function ExternalLinkIcon(props: JSX.IntrinsicAttributes & SVGProps<SVGSVGElement>) {
+  return (
+    <svg
+      {...props}
+      xmlns="http://www.w3.org/2000/svg"
+      width="24"
+      height="24"
+      viewBox="0 0 24 24"
+      fill="none"
+      stroke="currentColor"
+      strokeWidth="2"
+      strokeLinecap="round"
+      strokeLinejoin="round"
+    >
+      <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6" />
+      <polyline points="15 3 21 3 21 9" />
+      <line x1="10" x2="21" y1="14" y2="3" />
+    </svg>
+  )
 }
