@@ -8,9 +8,9 @@ export default function Home() {
         <Heading />
         <p className="mb-8">
           In the vast cosmos, a Pale Blue Dot—a tiny, fragile world. With azure
-          beauty, it spins in cosmic dance, a reminder of life&apos;s wonders. Amidst
-          celestial grandeur, we find awe and humility, gazing at our ethereal
-          home in the cosmic vastness.
+          beauty, it spins in cosmic dance, a reminder of life&apos;s wonders.
+          Amidst celestial grandeur, we find awe and humility, gazing at our
+          ethereal home in the cosmic vastness.
         </p>
         <h2 className="text-2xl font-semibold mb-4">My projects</h2>
         <div className="flex flex-col gap-6">

@@ -13,13 +13,25 @@ const Heading = () => {
       </div>
       <div className="flex space-x-4">
         <Link href="https://github.com" aria-label="Github">
-          <GithubLogo size={27} color="#ffffff" weight="duotone" />
+          <GithubLogo
+            size={28}
+            weight="bold"
+            className="text-black dark:text-white"
+          />
         </Link>
         <Link href="https://instagram.com/" aria-label="Instagram">
-          <InstagramLogo size={27} color="#ffffff" weight="duotone" />
+          <InstagramLogo
+            size={28}
+            weight="bold"
+            className="text-black dark:text-white"
+          />
         </Link>
         <Link href="https://x.com/" aria-label="Twitter/X">
-          <TwitterLogo size={27} color="#ffffff" weight="duotone" />
+          <TwitterLogo
+            size={28}
+            weight="bold"
+            className="text-black dark:text-white"
+          />
         </Link>
       </div>
     </div>
