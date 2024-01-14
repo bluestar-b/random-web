@@ -4,12 +4,15 @@ import {
   TwitterLogo,
 } from "@phosphor-icons/react/dist/ssr";
 import Link from "next/link";
+
 export default function Home() {
   return (
     <main>
       <div className="max-w-md md:max-w-2xl mx-auto py-12 px-6">
-        <div className="flex justify-between items-center mb-4">
-          <div className="text-3xl md:text-4xl font-bold">Lorem ipsum</div>
+        <div className="flex flex-col md:flex-row justify-center md:justify-between items-center mb-4">
+          <div className="text-3xl md:text-4xl font-bold mb-2 md:mb-0 text-center md:text-left">
+            Lorem ipsum
+          </div>
           <div className="flex space-x-4">
             <Link href="https://github.com" aria-label="Github">
               <GithubLogo size={27} color="#ffffff" weight="duotone" />
@@ -22,6 +25,7 @@ export default function Home() {
             </Link>
           </div>
         </div>
+
         <p className="mb-8">
           Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nobis nemo
           repudiandae eos fuga architecto quisquam iste, quo vel excepturi,
@@ -48,7 +52,6 @@ export default function Home() {
                 <h2 className="text-blue-700 hover:text-blue-800 dark:text-blue-400 dark:hover:text-blue-700 text-xl font-semibold mb-2 underline-offset-2 hover:underline">
                   Project B
                 </h2>
-               
               </Link>
               <p>
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque
@@ -62,4 +65,3 @@ export default function Home() {
     </main>
   );
 }
-
