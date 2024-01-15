@@ -1,4 +1,4 @@
-import React from "react"
+import Link from "next/link"
 
 interface ProjectCardProps {
   linkHref: string
@@ -15,11 +15,11 @@ const ProjectCard = ({
 }: ProjectCardProps) => {
   return (
     <div className="">
-      <a href={linkHref} aria-label={linkAriaLabel}>
+      <Link href={linkHref} aria-label={linkAriaLabel}>
         <h2 className="text-blue-700 hover:text-blue-800 dark:text-blue-400 dark:hover:text-blue-700 text-xl font-semibold mb-2 underline-offset-2 hover:underline">
           {title}
         </h2>
-      </a>
+      </Link>
       <p>{content}</p>
     </div>
   )
